@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 export default function Nav() {
@@ -24,13 +23,10 @@ export default function Nav() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-36 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center select-none">
-          <Image
+          <img
             src="/authlokr-logo.png"
             alt="AuthLokr"
-            width={1024}
-            height={1024}
             className="h-28 w-28 md:h-32 md:w-32 object-contain"
-            priority
           />
         </Link>
 
